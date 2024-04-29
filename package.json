@@ -1,8 +1,8 @@
 {
-  "name": "uptask-php-mvc-sass",
+  "name": "sishum",
   "version": "1.0.0",
-  "description": "UpTask - Curso Desarrollo web Completo",
-  "author": "Juan De la torre @codigoconjuan",
+  "description": "Sistema de Matriculas Humberto Pavon Fonseca",
+  "author": "correo@correo.com",
   "main": "index.js",
   "type": "module",
   "scripts": {
