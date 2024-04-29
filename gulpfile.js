@@ -13,7 +13,7 @@ const paths = {
 export function css( done ) {
     src(paths.scss, {sourcemaps: true})
         .pipe( sass({
-            outputStyle: 'compressed'
+            outputStyle: 'expanded'
         }).on('error', sass.logError) )
         .pipe( dest('./public/build/css', {sourcemaps: '.'}) );
     done()
