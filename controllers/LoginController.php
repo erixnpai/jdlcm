@@ -5,7 +5,7 @@ use MVC\Router;
 class LoginController 
 {
     public static function index(Router $router){
-        echo "Prueba de Login";
+        $router->render("login/auth",[]);
     }
     
 }
