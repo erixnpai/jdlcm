@@ -1,7 +1,6 @@
 <div class="sidebar" id="side_nav">
-            <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
-                <h1 class="fs-4"><span class="bg-white text-dark rounded shadow px-2 me-2">CL</span> <span
-                        class="text-white">Coding League</span></h1>
+            <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-center">
+               <img src="/build/img/logoone3.png" class="w-75" alt="">
                 <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i
                         class="fal fa-stream"></i></button>
             </div>
