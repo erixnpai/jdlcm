@@ -22,19 +22,8 @@
         </h3>
         <div class="">
           <div class="">
-            <form>
+            <form id="formlogin">
 
-              <!-- Email input -->
-              <!-- <div class="form-outline mb-4">
-                <label class="form-label text-white" for="form3Example3">Correo</label>
-                <input type="email" id="form3Example3" class="form-control" />
-              </div> -->
-
-              <!-- Password input -->
-              <!-- <div class="form-outline mb-4">
-                <label class="form-label text-white" for="form3Example4">Contraseña</label>
-                <input type="password" id="form3Example4" class="form-control" />
-              </div> -->
 
               <div class="mb-3 row d-flex justify-content-start ">
                 <label for="usser" class="col-3 col-form-label text-white text-start d-flex  gap-3">Usuario </label>
@@ -50,7 +39,7 @@
               </div>
 
               <div class=" d-flex justify-content-center mt-5">
-                <button type="submit" class="btn btn-primary  btn-lg">
+                <button type="submit" class="btn btn-primary  btn-lg" id="bt-login">
                   Iniciar Sesión
                 </button>
               </div>
@@ -61,4 +50,10 @@
     </div>
   </div>
 </section>
-<!-- Section: Design Block -->
+
+<?php
+$script = '
+    <script src="build/js/login.js"></script>
+';
+
+?>

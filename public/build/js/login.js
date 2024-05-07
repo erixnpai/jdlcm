@@ -1,0 +1,1 @@
+document.querySelector("#bt-login").addEventListener("click",(o=>{o.preventDefault(),async function(){try{const o=await fetch("http://localhost:3210/login",{method:"POST"}),t=await o.json();alert("inciiando form"),console.log(t),1==t.respuesta&&(window.location.href="http://google.com")}catch(o){console.log(o)}}()}));
