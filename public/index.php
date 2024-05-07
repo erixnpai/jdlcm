@@ -1,6 +1,8 @@
 <?php 
 
 require_once __DIR__ . '/../includes/app.php';
+
+use Controllers\DashboardController;
 use Controllers\LoginController;
 use MVC\Router;
 $router = new Router();
@@ -10,6 +12,10 @@ $router = new Router();
 
 $router->get("/", [LoginController::class, "index"]);
 $router->post("/login", [LoginController::class, "index"]);
+
+
+
+$router->get("/dashboard", [DashboardController::class, "index"]);
 
 
 

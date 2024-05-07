@@ -51,6 +51,15 @@ class Router
         // entonces incluimos la vista en el layout
         include_once __DIR__ . "/views/$view.php";
         $contenido = ob_get_clean(); // Limpia el Buffer
-        include_once __DIR__ . '/views/layout.php';
+        // include_once __DIR__ . '/views/layout.php';
+
+
+        $url_actual = $_SERVER['PATH_INFO'] ?? '/';
+
+        if(str_contains($url_actual, '/dashboard')) {
+            include_once __DIR__ . '/views/dashboard-layout.php';
+        }else {
+            include_once __DIR__ . '/views/layout.php';
+        }
     }
 }
