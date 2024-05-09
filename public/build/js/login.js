@@ -1,1 +1,26 @@
-document.querySelector("#bt-login").addEventListener("click",(t=>{t.preventDefault(),async function(){try{const t=await fetch("http://localhost:3210/login",{method:"POST"}),o=await t.json();console.log(o),1==o.respuesta&&(window.location.href="http://localhost:3210/dashboard")}catch(t){console.log(t)}}()}));
+(function () {
+  const btnlogin = document.querySelector("#bt-login");
+  //     const formlogin = document.querySelector("#formlogin").addEventListener("submit",(e) => {
+  //       e.preventDefault()
+  //       alert("inciiando");
+  //   });
+
+  btnlogin.addEventListener("click", (e) => {
+    e.preventDefault();
+    login();
+  });
+
+  async function login() {
+    
+    try {
+      const resultado = await fetch("http://localhost:8080/login", { method: "POST" });
+      const respuesta = await resultado.json();     
+      console.log(respuesta);
+      if (respuesta.respuesta == true) {
+        window.location.href = "http://localhost:8080/dashboard";
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+})();

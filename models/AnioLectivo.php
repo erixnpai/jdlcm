@@ -1,18 +1,49 @@
 <?php
 
 namespace Model;
-class AnioLectivo extends ActiveRecord {
-    protected static $tabla = 'anio_lectivo';
-    protected static $columnasDB = ['Id', 'anio'];
 
-    public $Id;
-    public $anio;
+class Asignatura extends ActiveRecord {
+    protected static $tabla = 'Asignatura';
+    protected static $columnasDB = ['idAsignatura', 'Asignatura'];
+
+    public $idAsignatura;
+    public $Asignatura;
 
     public function __construct($args = [])
     {
-        $this->Id = $args['Id'] ?? null;
-        $this->anio = $args['anio'] ?? null;
+        $this->idAsignatura = $args['idAsignatura'] ?? null;
+        $this->Asignatura = $args['Asignatura'] ?? '';
     }
 
-   
+
+    /**
+     * Get the value of idAsignatura
+     */
+    public function getIdAsignatura() {
+        return $this->idAsignatura;
+    }
+
+    /**
+     * Set the value of idAsignatura
+     */
+    public function setIdAsignatura($idAsignatura): self {
+        $this->idAsignatura = $idAsignatura;
+        return $this;
+    }
+
+    /**
+     * Get the value of Asignatura
+     */
+    public function getAsignatura() {
+        return $this->Asignatura;
+    }
+
+    /**
+     * Set the value of Asignatura
+     */
+    public function setAsignatura($Asignatura): self {
+        $this->Asignatura = $Asignatura;
+        return $this;
+    }
 }
+?>

@@ -13,11 +13,11 @@
   async function login() {
     
     try {
-      const resultado = await fetch("http://localhost:3210/login", { method: "POST" });
+      const resultado = await fetch("http://localhost:8080/login", { method: "POST" });
       const respuesta = await resultado.json();     
       console.log(respuesta);
       if (respuesta.respuesta == true) {
-        window.location.href = "http://localhost:3210/dashboard";
+        window.location.href = "http://localhost:8080/dashboard";
       }
     } catch (error) {
         console.log(error);

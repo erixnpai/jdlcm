@@ -3,17 +3,47 @@
 namespace Model;
 
 class Asignatura extends ActiveRecord {
-    protected static $tabla = 'asignatura';
-    protected static $columnasDB = ['Id', 'Nombre'];
+    protected static $tabla = 'Asignatura';
+    protected static $columnasDB = ['idAsignatura', 'Asignatura'];
 
-    public $Id;
-    public $Nombre;
+    public $idAsignatura;
+    public $Asignatura;
 
     public function __construct($args = [])
     {
-        $this->Id = $args['Id'] ?? null;
-        $this->Nombre = $args['Nombre'] ?? '';
+        $this->idAsignatura = $args['idAsignatura'] ?? null;
+        $this->Asignatura = $args['Asignatura'] ?? '';
     }
 
-   
+
+    /**
+     * Get the value of idAsignatura
+     */
+    public function getIdAsignatura() {
+        return $this->idAsignatura;
+    }
+
+    /**
+     * Set the value of idAsignatura
+     */
+    public function setIdAsignatura($idAsignatura): self {
+        $this->idAsignatura = $idAsignatura;
+        return $this;
+    }
+
+    /**
+     * Get the value of Asignatura
+     */
+    public function getAsignatura() {
+        return $this->Asignatura;
+    }
+
+    /**
+     * Set the value of Asignatura
+     */
+    public function setAsignatura($Asignatura): self {
+        $this->Asignatura = $Asignatura;
+        return $this;
+    }
 }
+?>

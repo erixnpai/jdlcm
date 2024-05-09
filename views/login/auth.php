@@ -1,59 +1,174 @@
-<!-- Section: Design Block -->
-<section class="background-radial-gradient overflow-hidden vh-100 d-flex flex-column justify-content-center align-items-center">
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <title>Material Able bootstrap admin template by Codedthemes</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <div class="container px-5 py-5 px-md-5 text-center text-lg-start my-5">
-    <div class="row gx-lg-5 align-items-center mb-5  bg-modificado  rounded-3  shadow-lg p-3 mb-5 ">
-      <div class="col-lg-6 mb-5 mb-lg-0 " style="z-index: 10">
-        <h1 class="my-5 display-5 fs-1 fw-bold ls-tight text-center" style="color: hsl(218, 81%, 95%)">
-          Colegio Humberto Pavón Fonseca<br />
-          <span style="color: hsl(218, 81%, 75%)">Catarina</span>
-        </h1>
-        <div class="d-flex flex-column justify-content-center align-items-center mb-5">
-          <img src="/build/img/LOGO 1.png" class="w-25" alt="">
-        </div>
-      </div>
+      <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+      <meta name="author" content="Codedthemes" />
+      <!-- Favicon icon -->
 
-      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
-        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
-        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
-        <h3 class="my-5 fw-bold fs-1 ls-tight text-center" style="color: hsl(218, 81%, 95%)">
-          Iniciar Sesión
-        </h3>
-        <div class="">
-          <div class="">
-            <form id="formlogin">
+      <link rel="icon" href="/build/img/favicon.png" type="image/x-icon">
+      <!-- Google font-->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+      <!-- Required Fremwork -->
+      <link rel="stylesheet" type="text/css" href="/build/css/bootstrap.min.css">
+      <!-- waves.css -->
+      <link rel="stylesheet" href="/build/css/waves.min.css" type="text/css" media="all">
+      <!-- themify-icons line icon -->
+      <link rel="stylesheet" type="text/css" href="/build/css/themify-icons.css">
+      <!-- ico font -->
+      <link rel="stylesheet" type="text/css" href="/build/css/icofont.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" type="text/css" href="/build/css/font-awesome.min.css">
+      <!-- Style.css -->
+      <link rel="stylesheet" type="text/css" href="/build/css/stylelogin.css">
+  </head>
 
-
-              <div class="mb-3 row d-flex justify-content-start ">
-                <label for="usser" class="col-3 col-form-label text-white text-start d-flex  gap-3">Usuario </label>
-                <div class="col-9">
-                  <input type="text" class="form-control" id="usser" placeholder="usuario">
-                </div>
+  <body themebg-pattern="theme1">
+  <!-- Pre-loader start -->
+  <div class="theme-loader">
+      <div class="loader-track">
+          <div class="preloader-wrapper">
+              <div class="spinner-layer spinner-blue">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
               </div>
-              <div class="mb-3 row justify-content-end">
-                <label for="password" class="col-3 text-white text-start  ">Contraseña </label>
-                <div class="col-9">
-                  <input type="password" class="form-control" id="password" placeholder="contraseña">
-                </div>
+              <div class="spinner-layer spinner-red">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
               </div>
 
-              <div class=" d-flex justify-content-center mt-5">
-                <button type="submit" class="btn btn-primary  btn-lg" id="bt-login">
-                  Iniciar Sesión
-                </button>
+              <div class="spinner-layer spinner-yellow">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
               </div>
-            </form>
+
+              <div class="spinner-layer spinner-green">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
   </div>
-</section>
+  <!-- Pre-loader end -->
 
-<?php
-$script = '
-    <script src="build/js/login.js"></script>
-';
+    <section class="login-block">
+        <!-- Container-fluid starts -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- Authentication card start -->
 
-?>
+                        <form class="md-float-material form-material">
+                            <div class="text-center">
+                                <img src="/build/img/logo1.png" alt="logo.png">
+                            </div>
+                            <div class="auth-box card">
+                                <div class="card-block">
+                                    <div class="row m-b-20">
+                                        <div class="col-md-12">
+                                            <h3 class="text-center">Iniciar sesión</h3>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-primary">
+                                        <input type="text" name="email" class="form-control">
+                                        <span class="form-bar"></span>
+                                        <label class="float-label">Usuario</label>
+                                    </div>
+                                    <div class="form-group form-primary">
+                                        <input type="password" name="password" class="form-control">
+                                        <span class="form-bar"></span>
+                                        <label class="float-label">Contraseña</label>
+                                    </div>
+                                    <div class="row m-t-25 text-left">
+                                        <div class="col-12">
+                                            <div class="checkbox-fade fade-in-primary d-">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-primary"></i></span>
+                                                    <span class="text-inverse">Recuerdame</span>
+                                                </label>
+                                            </div>
+                                            <div class="forgot-phone text-right f-right">
+                                                <a href="auth-reset-password.html" class="text-right f-w-600"> Olvidaste la contraseña?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t-30">
+                                        <div class="col-md-12">
+                                            <button type="button" id="bt-login" class="btn btn-primary btn-md btn-block waves-effect waves-light text-center m-b-20">Ingresar</button>
+                                        </div>
+                                    </div>
+                                    <hr/>
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <p class="text-inverse text-left"><a href="../index.html"><b>Regresar al inicio</b></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- end of form -->
+                </div>
+                <!-- end of col-sm-12 -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container-fluid -->
+    </section>
+    <!-- Warning Section Starts -->
+<!-- Warning Section Ends -->
+<!-- Required Jquery -->
+<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="/build/js/jquery.min.js"></script>
+<script type="text/javascript" src="/build/js/popper.min.js"></script>
+<script type="text/javascript" src="/build/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/build/js/login.js"></script>
+<!-- waves js -->
+<script type="text/javascript" src="/build/js/waves.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src="../assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="/build/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="/build/js/common-pages.js"></script>
+</body>
+
+</html>
