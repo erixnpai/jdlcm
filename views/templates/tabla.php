@@ -30,11 +30,9 @@
                   </thead>
                   <tbody>
                   <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 4.0
-                    </td>
-                    <td>Win 95+</td>
+                    <td>Erian</td>
+                    <td>Aleman</td>
+                    <td>87654321</td>
                     <td> 4</td>
                     <td class="text-center">       
                     <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete">
@@ -46,11 +44,9 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.0
-                    </td>
-                    <td>Win 95+</td>
+                  <td>Erian</td>
+                    <td>Aleman</td>
+                    <td>87654321</td>
                     <td>5</td>
                     <td class="text-center">       
                     <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete">
@@ -62,11 +58,9 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.5
-                    </td>
-                    <td>Win 95+</td>
+                  <td>Erian</td>
+                    <td>Aleman</td>
+                    <td>87654321</td>
                     <td>5.5</td>
                     <td class="text-center">       
                     <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete">
@@ -180,12 +174,12 @@ include 'inputs.php'
   </div>
 
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+  <!-- <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.2.0
     </div>
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
+  </footer> -->
 
   
 </div>
